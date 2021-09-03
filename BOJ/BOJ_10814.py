@@ -1,10 +1,8 @@
-from sys import stdin
-
+import sys
 n = int(input())
 memberList = list()
 for _ in range(n):
-    a,b = input().split()
-    memberList.append(a+' '+b)
-new_table = sorted(memberList, key=lambda x: -x[0])
+    memberList.append(list(sys.stdin.readline().split()))
+memberList.sort(key=lambda x: int(x[0]))
 for i in range(n):
-    print(new_table[i])
+    print(memberList[i][0]+' '+memberList[i][1])
