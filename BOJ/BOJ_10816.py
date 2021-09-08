@@ -1,16 +1,7 @@
 import sys
+from collections import Counter
 n = int(input())
-cardList = list()
-
-for _ in range(n):
-  cardList.append(int(input()))
-  
+cardList = (map(int, input().split(' ')))
 m = int(input())
-answerList = list()
-
-for _ in range(m)
-  target = int(input())
-  countNum = cardList.count(target)
-  answerList.append(countNum)
-
-print(answerList)
+targetList = map(int, input().split(' '))
+target = Counter(cardList)

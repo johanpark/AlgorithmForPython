@@ -14,8 +14,7 @@ def solution(table, languages, preference):
                     score += (len(new_table[i]) - k) * preference[j]
             score_value += score
         scoreList.append(score_value)
-    print(scoreList)
-    return answer
+    return job[scoreList.index(max(scoreList))]
 
 
 print(solution(	["SI JAVA JAVASCRIPT SQL PYTHON C#", "CONTENTS JAVASCRIPT JAVA PYTHON SQL C++", "HARDWARE C C++ PYTHON JAVA JAVASCRIPT", "PORTAL JAVA JAVASCRIPT PYTHON KOTLIN PHP", "GAME C++ C# JAVASCRIPT C JAVA"], ["PYTHON", "C++", "SQL"], [7, 5, 5]))
